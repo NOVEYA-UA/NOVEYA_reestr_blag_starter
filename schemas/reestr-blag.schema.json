@@ -1,0 +1,88 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Реестр благ",
+  "type": "object",
+  "properties": {
+    "Номер": {
+      "type": "integer"
+    },
+    "ID_артефакта": {
+      "type": "string"
+    },
+    "Участник": {
+      "type": "string"
+    },
+    "Период_с": {
+      "type": "string",
+      "format": "date"
+    },
+    "Период_по": {
+      "type": "string",
+      "format": "date"
+    },
+    "Идентификатор_квартала": {
+      "type": "string",
+      "pattern": "^Q\\d{4}Q[1-4]$"
+    },
+    "Валюта": {
+      "type": "string"
+    },
+    "Начислено": {
+      "type": "number"
+    },
+    "Эко_десятина": {
+      "type": "number"
+    },
+    "Пул": {
+      "type": "number"
+    },
+    "Доля_источникам": {
+      "type": "number"
+    },
+    "Бонус_НРМ": {
+      "type": "number"
+    },
+    "Эко_резерв": {
+      "type": "number"
+    },
+    "Выплата_чистая": {
+      "type": "number"
+    },
+    "S_i": {
+      "type": "number"
+    },
+    "Ksn": {
+      "type": "number"
+    },
+    "Delta_Ksn": {
+      "type": "number"
+    },
+    "RNI": {
+      "type": "number"
+    },
+    "Версия_настроек": {
+      "type": "string"
+    },
+    "Хеш_пред": {
+      "type": "string"
+    },
+    "Хеш_тек": {
+      "type": "string"
+    },
+    "Статус": {
+      "type": "string"
+    },
+    "Время_фиксации": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "Номер",
+    "ID_артефакта",
+    "Участник",
+    "Идентификатор_квартала",
+    "Пул",
+    "Выплата_чистая"
+  ]
+}
